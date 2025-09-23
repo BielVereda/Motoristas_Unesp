@@ -1,0 +1,36 @@
+header{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.edital-conteudo {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.edital-conteudo h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #004080;
+}
+
+.edital-conteudo p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.edital-conteudo ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.edital-conteudo li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
