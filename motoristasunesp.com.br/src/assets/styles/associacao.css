@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #003366;
+    --text-dark: #333;
+    --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: var(--text-dark);
+}
+
+/* ====== HEADER ====== */
+header {
+    background: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 700;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.5s, box-shadow 0.3s;
+    padding: 0.7em;
+}
+
+.nav-list li a:hover {
+    background-color: var(--primary-color);
+    color: #f4d90d;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+/* ====== CONTEÚDO ====== */
+.conteudo {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.texto-principal {
+    text-align: justify;
+}
+
+.texto-principal h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* ====== RODAPÉ ====== */
+.contato { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+}
+
+.contato h4, .contato p { 
+    margin: 0; 
+}
+
+.contato p { 
+    color: #f4d90d; 
+    text-decoration: underline; 
+}
+
+footer > .container > h4 { 
+    margin-bottom: 10px; 
+}
+
+footer > .container > p { 
+    margin-bottom: 10px; 
+}
+
+.footer { 
+    background-color: var(--primary-color); 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px 0; 
+}
