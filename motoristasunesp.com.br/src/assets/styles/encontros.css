@@ -1,0 +1,112 @@
+@import url("./reset.css");
+
+/* ==================== CONTEÚDO ==================== */
+.conteudo {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-principal {
+  position: relative;
+  text-align: justify;
+}
+
+.img-capitular {
+  float: left;
+  width: 220px;
+  height: auto;
+  margin: 0 20px 20px 0;
+  border-radius: 8px;
+}
+
+/* ==================== GALERIA ==================== */
+.galeria {
+  margin-top: 50px;
+}
+
+.galeria h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #004080;
+}
+
+.grid-galeria {
+  display: grid;
+  gap: 15px;
+}
+
+.grid-galeria img {
+  width: 1000px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.02);
+}
+
+.galeria-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-item h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.galeria-item p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ==================== BOTÃO ==================== */
+.btn-galeria {
+  display: inline-block;
+  background: #ffd700;
+  color: #003366;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-galeria:hover {
+  background: #e6c200;
+  color: #fff;
+}
+
+/* Mobile pequeno (até 480px) */
+@media (max-width: 480px) {
+  .grid-galeria img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Mobile grande (481px – 768px) */
+@media (max-width: 768px) {
+  .grid-galeria img {
+    height: 100%;
+    width: 100%;
+  }
+}
+/* Tablet (769px – 1024px) */
+@media (max-width: 1024px) {
+  .grid-galeria img {
+    height: 100%;
+    width: 100%;
+  }
+}

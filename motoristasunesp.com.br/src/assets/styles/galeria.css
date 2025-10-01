@@ -1,0 +1,76 @@
+@import url("./reset.css");
+
+/* ============== GARANTIA DA POSIÇÃO DO FOOTER ============= */
+html,
+body {
+  height: 100%;
+}
+
+.corpo {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* ============== GALERIA ============= */
+.galeria-conteudo {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #222;
+}
+
+.galeria-conteudo h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.galeria-conteudo .intro {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #555;
+}
+
+.galeria-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-item h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.galeria-item p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ============== BOTÃO ============= */
+.btn-galeria {
+  display: inline-block;
+  background: #ffd700;
+  color: #003366;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-galeria:hover {
+  background: #e6c200;
+  color: #fff;
+}
