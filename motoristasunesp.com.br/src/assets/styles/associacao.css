@@ -1,0 +1,31 @@
+@import url("./reset.css");
+
+/* ==================== BODY ==================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: var(--text-dark);
+}
+
+/* ==================== CONTEÚDO ==================== */
+.conteudo {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-principal {
+  text-align: justify;
+}
+
+.texto-principal h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
