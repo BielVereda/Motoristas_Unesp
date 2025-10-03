@@ -1,0 +1,388 @@
+/* ==================== TEXTO GALERIA ==================== */
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+  background: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header > .container-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > .container-img > .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header > .container-img > .logo > img {
+  height: 50px;
+  display: block;
+}
+
+/* ==================== NAV ==================== */
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.nav-list a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 700;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.5s, box-shadow 0.3s;
+  padding: 0.7em;
+  background-color: #ffffff;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== SUBNAV ==================== */
+.subnav {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.subnav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+.subnav-list a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
+  border-bottom: 3px solid transparent;
+  padding: 5px 0;
+  transition: border-color 0.7s;
+}
+
+.subnav-list a:hover {
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+/* ==================== HERO ==================== */
+.hero-section {
+  background: url("../images/hero.png") no-repeat center center/cover;
+  color: var(--text-light);
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+.hero-section h1 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-section p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* ==================== SEÇÕES ==================== */
+.section {
+  padding: 60px 0;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.bg-light {
+  background-color: var(--background-light);
+}
+
+/* ==================== CARDS ==================== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 15px;
+  font-size: 1.5rem;
+}
+.card p {
+  margin: 0 15px 15px;
+}
+.read-more {
+  display: block;
+  padding: 0 15px 15px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ==================== FOOTER ==================== */
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.contato h4,
+.contato p {
+  margin: 0;
+}
+.contato p {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+.footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ==================== BOTÃO GALERIA ==================== */
+.btn-wrapper-container {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  text-align: center;
+  width: fit-content;
+}
+.btn-wrapper-container:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* ==================== CARROSSEL ==================== */
+.carousel-container {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-track .card {
+  flex: 0 0 300px;
+  margin: 0;
+  min-width: 0;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.carousel-btn.prev {
+  left: 10px;
+}
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* ==================== TEMA DARK ==================== */
+/* ==================== LEIA MAIS ==================== */
+body.dark-theme .read-more {
+  color: var(--secondary-color);
+}
+
+/* ==================== BOTÃO GALERIA ==================== */
+body.dark-theme .btn-wrapper-container {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+body.dark-theme .btn-wrapper-container:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-dark);
+}
+
+/* ==================== SUBNAV ==================== */
+body.dark-theme .subnav {
+  background: var(--primary-color);
+  box-shadow: var(--card-shadow);
+}
+
+body.dark-theme .subnav a {
+  color: var(--text-light);
+}
+
+/* ==================== CARDS ==================== */
+body.dark-theme .carousel-track .card {
+  background: var(--background-dark);
+  color: var(--text-light);
+  box-shadow: var(--card-shadow);
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+/* Tablet (769px – 1024px) */
+@media (max-width: 1024px) {
+  .carousel-track .card {
+    flex: 0 0 250px;
+  }
+  .nav-list {
+    gap: 25px;
+  }
+}
+
+/* Mobile grande (481px – 768px) */
+@media (max-width: 768px) {
+  .header > .container-img {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-list a {
+    font-size: 0.9rem;
+    padding: 0.6em 1em;
+  }
+
+  .carousel-track {
+    gap: 15px;
+  }
+  .carousel-track .card {
+    flex: 0 0 220px;
+  }
+
+  .subnav-list {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+/* Mobile pequeno (até 480px) */
+@media (max-width: 480px) {
+  .header > .container-img {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  p {
+  margin-left: 20px;
+  margin-right: 20px;
+  } 
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-list {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-list a {
+    font-size: 0.85rem;
+    padding: 0.5em 0.8em;
+  }
+
+  .carousel-track {
+    gap: 10px;
+  }
+  .carousel-track .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .subnav-list {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .subnav-list a {
+    font-size: 0.9rem;
+  }
+
+  .contato {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+    padding: 15px 0;
+  }
+}

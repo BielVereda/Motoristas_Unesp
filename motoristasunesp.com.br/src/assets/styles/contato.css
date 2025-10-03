@@ -1,0 +1,193 @@
+@import url("./reset.css");
+
+/* ==================== CONTATOS ==================== */
+.contato-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ==================== FORMULÁRIO ==================== */
+.form-contato {
+  flex: 1 1 600px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-contato h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.form-contato label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea,
+.form-contato select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.form-contato button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-contato button:hover {
+  background-color: #004080;
+}
+
+/* ==================== CONTATOS (LATERAL) ==================== */
+.contatos-laterais {
+  flex: 0 1 250px;
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+  margin-left: 20px;
+}
+
+.contatos-laterais h3 {
+  margin-top: 1em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.contatos-laterais h4 {
+  color: #f4d90d;
+}
+
+.contatos-laterais ul {
+  color: #ffffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contatos-laterais ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+/* Tablet (769px – 1024px) */
+@media (max-width: 1024px) {
+  .carousel-track .card {
+    flex: 0 0 250px;
+  }
+  .nav-list {
+    gap: 25px;
+  }
+}
+
+/* Mobile grande (481px – 768px) */
+@media (max-width: 768px) {
+  .header > .container-img {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-list a {
+    font-size: 0.9rem;
+    padding: 0.6em 1em;
+  }
+
+  .carousel-track {
+    gap: 15px;
+  }
+  .carousel-track .card {
+    flex: 0 0 220px;
+  }
+
+  .subnav-list {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+/* Mobile pequeno (até 480px) */
+@media (max-width: 480px) {
+  .header > .container-img {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  p {
+  margin-left: 20px;
+  margin-right: 20px;
+  } 
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-list {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-list a {
+    font-size: 0.85rem;
+    padding: 0.5em 0.8em;
+  }
+
+  .carousel-track {
+    gap: 10px;
+  }
+  .carousel-track .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .subnav-list {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .subnav-list a {
+    font-size: 0.9rem;
+  }
+
+  .contato {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+    padding: 15px 0;
+  }
+}

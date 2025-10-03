@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Motoristas UNESP</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contato.css">
+</head>
+
+<body>
+    <script src="./../scripts/btn-theme.js"></script>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo_motoristas.svg" alt="Logo Motoristas da UNESP">
+                <span><strong>Contato</strong></span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="historico.html">Histórico</a></li>
+                    <li><a href="diretoria.html">Diretoria</a></li>
+                    <li><a href="../../../index.html">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <div class="contato-container">
+
+            <form class="form-contato" id="form-contato">
+                <h2>Entre em Contato</h2>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <label for="questao">Questão:</label>
+                <textarea id="questao" name="questao" rows="5" required></textarea>
+
+                <label for="contato-select">Enviar Para:</label>
+                <select id="contato-select" name="contato">
+                    <option value="contato@motoristasunesp.com.br">contato@motoristasunesp.com.br</option>
+                    <option value="motoristasunesp@gmail.com">motoristasunesp@gmail.com</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <aside class="contatos-laterais">
+                <h3>Outros meios de contato</h3>
+                <h4>E-mails</h4>
+                <ul>
+                    <li>contato@motoristasunesp.com.br</li>
+                    <li>motoristasunesp@gmail.com</li>
+                </ul>
+                
+                <h3>Redes sociais</h3>
+                <h4>Instagram</h4>
+                <ul>
+                    <li>@amuoficial</li>
+                </ul>
+                
+                <h3>Telefone</h3>
+                <ul>
+                    <li>(14) 3880-7694</li>
+                </ul>
+
+                <h3>Endereço</h3>
+                <ul>
+                    <li>Rua Dr. José Barbosa de Barros, 1780</li>
+                    <li>CEP: 18610-318</li>
+                    <li>Botucatu - São Paulo</li>
+                </ul>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container contato">
+                <h4>Entre em Contato:</h4><p>motoristasunesp@gmail.com</p><h4>/</h4><p>contato@motoristasunesp.com.br</p>
+            </div>
+        <div class="container">
+            <p>&copy; 2025 Associação dos Motoristas da UNESP. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./../scripts/mailto.js"></script>
+</body>
+</html>
